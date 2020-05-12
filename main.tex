@@ -1,0 +1,144 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Software Requirement specification}
+\author{psyas9 }
+\date{May 2020}
+
+\begin{document}
+
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Introduction,goals and scope}
+The specification requirement document describes the development of our automated mental health app from a technical standpoint.These requirements help in the controlling and evolution of the software application.This requirement document acts as a blueprint of what exactly goes on in the app.\\
+The main goals of the requirement specification phase are \textbf{Low Installation Cost,Quick set up of the App and Low Maintenance. }\\
+
+
+\section{Software Functionality}
+This Mind over Matter app focuses on many key factors behind a healthy and balanced mental health.The high level core functionality of the app consist of mind blowing features one of which is the Alert option for time to time tasks the user has to complete. This app allows its users to \textbf{break old patterns and form new habits!!}Therefore the functionality of the app helps users to combine managing deadlines with helpful exercises
+
+\subsection{Functionality of user and system}
+\begin{enumerate}
+    \item \textbf{ START SCREEN} -Sign up using Facebook or register a new account.\\
+    \item \textbf{LOG IN SCREEN}-To access his/her account using allocated username and password.\\
+USE: for security to prevent personal data and loss of information.\\
+    \item \textbf{PRIVATE/PUBLIC SETTING} - Users are allowed to switch from private to public mode if they want to explore other users profile\\
+USE: helps them to deal with stress and sometimes lets them ease their mind seeing others on the same page when in public mode.
+    \item \textbf{REFLECTION QUIZ}- After creating a new account ,the app starts with a quiz to analyse mental health.\\
+USE: for proper reflection and for weekly checks done on the users mental well being.\\
+    \item \textbf{WELCOME SCREEN}- OPTION OF ALERT IS PRESENT(FOR REGULAR NOTIFICATIONS AND REMINDERS)
+USE: does not let the user forget about their daily tasks and a fun activity to keep them happy,active and stress free.\\
+    \item \textbf{HOME SCREEN} - App displays a home screen with 6 options(To do list,Timetable,MIND,HEALTH,Activities and Motivation) 
+    \item Tapping on the \textbf{To Do List} a screen with all day to day work opens(work related to studies,health and motivation) The to-do list contains a day schedule made with respect to the timetable+ a fun activity + Quote of the day\\
+USE: To do list sets a daily schedule for the user to organise their life and bring in a sense of meaning and purpose to it. Also helps in the stressful exam periods,as preparation for it is done daily)
+    \item Tapping on the \textbf{Time Table} user can set all the important dates,assessment deadlines as well as other stuff the user wants to complete. This is set at the start, can be updated anytime.
+USE:helps users to complete all tasks before time giving a sense of contentment + maintaining their mental peace
+    \item Users shall be able to \textbf{update,edit,add or delete} any changes in the to-do list and timetable with RESET button\\
+USE: creates a newly set to-do list for the users and helps manage the deadlines before time.
+    \item Tapping on \textbf{ Mind/Health} User shall be able to get the required source of information and help regarding things that cause stress or anxiety in their life\\
+USE : Inf and Strategies of improvement are given.For students Tips and exam strategies are given. Solutions like dos and dont's are provided to improve are provided for help.(Making them POSITIVE in life)
+    \item Tapping on \textbf{Activity/Motivation} user can choose something fun to do,also gives them the right motivation boost each day for their engagement purpose.
+    \item \textbf{Overview of incomplete Tasks}- gives a user head up on the tasks left so that later on he/she is prepared and finishes them before time. 
+    
+
+\end{enumerate}
+
+\subsection{Design Style and Components}
+\begin{itemize}
+    \item \textbf{App Icon}- The size and shape of the icon is made according to the format of an Android application, the size is 49*49px and shape is a square; I have tried to allow as much flexibility(but made a  steady adjustment) in the visual elements. 
+    \item \textbf{Button}- Various buttons are created for easy navigation and style. Different buttons add different functionalities. The most familiar one is the Back Button, which is usually placed at the bottom. It is clicked to go to the previous screen easily. Other buttons( also called action buttons) are used in different areas of the interface.
+    \item \textbf{Color Scheme}- Having a limited color palette I have strategically tried to add color through the screen. Text Color and Background colors have been chosen on the basis of contrast ratios of at least 4.6:2. Color considerations are standardized on various lighting contexts.
+    \item \textbf{Font}- As we know an Android app has documented its own default fonts. To give my app a decorative look I have used a very basic and bold font that makes it readable and easy-to-understand for the user. For a comfortable and smooth experience I have selected a range of contrasting system formats. For instance the header size uses a font size of 48.
+    \item \textbf{Search Bar}- The screen tab is not hidden and can be spotted easily.It is used to find anything on the screen
+    \item \textbf{Menu/Home} - In terms of an app a menu gives a list of options to click.Making it easier for the user to choose and navigate in the app.
+    \item \textbf{UX patterns and Visuals}- The state of this mobile app design include some UX patterns and visual elements. Starting with the basic tab bars that are made for  easy navigation and are easy to reach by your thumb while using your mobile phone. Each Screen had bold headlines and simple yet bold icons.
+\end{itemize}
+
+\section{External Interface Requirements}
+
+\subsection{USER/Software/Hardware Interfaces:}
+\textbf{FRONT-END SOFTWARE}: MIT App Inventor\\
+It is a web based interface designer specially used for Android devices\\
+\textbf{BACK-END SOFTWARE}: Visual Blocks \\
+For going from one screen to another,working and navigation in the app\\
+
+\textbf{HARDWARE INTERFACE}: Android phone \\ 
+\textbf{REQUIREMENTS}
+
+\begin{tabular}{c|c}
+\hline
+    Processor    & 1GHz\\
+    RAM          & 2GB\\
+    Minimum Space& 10MB\\
+    Emulator     & 64 bit OS\\
+\hline
+\end{tabular}
+
+\textbf{SOFTWARE INTERFACE}: Operating System- Windows\\
+Platform-Android SDK Framework\\
+Tools: MIT APP Inventor,Eclipse(Java),LaTeX,GIT Hub\\
+Technology: Java,Markdown documents\\
+
+
+\section{Quality Attributes and Constraints}
+In this section focus on specifying non functional requirements i.e. software version,reliability,modifiablity and usability requirements of the app defined as an interactive system.
+\subsection{Quality Attributes}
+
+\subsubsection{Performance and Scalability}
+
+\begin{tabular}{c|c}
+\hline
+    \textbf{Performance Matrix} &  \textbf{Examples}\\
+\hline
+    Response time               &    takes seconds to return search results and go to next screen\\
+    Throughput                  &  number of successful or unsuccessful entries in the app\\
+    Data Capacity               &   Max number of user data records\\
+    Latency                     &   Avg delay for the app should not be less than 32ms\\
+    Dynamic Capacity            &  Max users can use it at same time\\
+\hline
+\end{tabular}
+
+\begin{itemize}
+    \item \textbf{App Start-Up}: The app should open the first screen in not more that 1-2 seconds
+    \item \textbf{Data to-from Server}:Data should be handled efficiently for each user in a relevant format
+    \item \textbf{Server-Down} : if the server is down, back up server should be in contact; for instance in this Psych mental health app users should be able to access their to-do list to remain on track 
+    \item \textbf{Hardware/Software Variation}: accurate processor specifications are needed. example 2 GB in this case
+\end{itemize}
+
+\subsubsection{\textbf{Availability, Maintainability and Reliability}:}
+The products lifespan depends on establishing all three maintainability/reliability/availability. The Psych app will run \textbf{24*7} if network connection is available\\
+The application will only \textbf{run on an Android device}.\\ And these \textbf{bugs} should be fixed \textbf{within 24 hours} for proper maintainability.As per the need of the app the Schedule/Timetable of the database needs to be updated timely by the user. Any other thing as per the users need can be added anytime in the app. 
+
+\subsubsection{\textbf{Security, Robustness and Usability}}
+For each user a paramount importance should be given to the \textbf{authentication Scheme}(i.e. requires the use of passwords).As from the mental health's perspective different users are dealing with different types of stress or anxiety. \textbf{Private or Public mode} should be chosen by the user.\\ For each new/deleted entry in the timetable or to do list \textbf{relevant format(month,date,year) }is done.The error rate should not be \textbf{more than 10 percent} in any phase of running the app.This requires \textbf{proper programming techniques}.
+
+
+\subsection{Constraints}
+
+\subsubsection{Compatibility and Portability}
+With the growing technology needs in different environments the capability for this app should be adapted accordingly.As \textbf{smartphones are portable,so is this application}.
+
+\subsubsection{Other Constraint}
+\begin{itemize}
+    \item To use the app should be connected to Internet.\\
+    \item Users of the app should know how to use an android phone\\
+    \item: The database should be updated and saved every time the user makes any changes.
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
